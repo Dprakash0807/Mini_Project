@@ -1,6 +1,7 @@
-import React from 'react'
-import './Offer.css'
-import exclucive_image from '../Asset/exclusive_image.png'
+import React from 'react';
+import './Offer.css';
+import exclucive_image from '../Assets/dress/2.png';
+
 const Offer = () => {
   return ( 
     <div className='offer'>
@@ -11,10 +12,12 @@ const Offer = () => {
         <button>Check Now</button>
       </div>
       <div className="offer-right">
-        <img src={exclucive_image} alt="" />
+        <div className="img">
+          <img src={exclucive_image} alt="Exclusive Offer" />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Offer
+export default Offer;

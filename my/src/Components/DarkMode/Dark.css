@@ -1,0 +1,66 @@
+/* src/DarkModeToggle.css */
+.toggle-container {
+    margin: 20px;
+  }
+  
+  .toggle-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .toggle-label input {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .toggle-slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  .toggle-slider::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+    left: 1px;
+  }
+  
+  input:checked + .toggle-slider {
+    background-color: #4caf50; /* Green color when checked */
+  }
+  
+  input:checked + .toggle-slider::before {
+    transform: translateX(20px); /* Move the slider */
+  }
+  
+  body {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: #ffffff; /* Set all text to white in dark mode */
+  }
+
+  .popular.dark-mode{
+        color: white;
+  }
+  .newcollection.dark-mode{
+    color: white;
+  }
+  .navbar.dark-mode{
+    color: white;
+  }
+  .productdisplay.dark-mode{
+    color: white;
+  }
+  

@@ -1,10 +1,12 @@
 import React from 'react'
 import './NewCollection.css'
-import new_collection from '../Asset/new_collections'
+import new_collection from '../Assets/new_collections'
 import Item from '../Item/Item'
+import '../DarkMode/Dark.css'
 const NewCollection = () => {
   return (
-    <div className='newcollection'>
+    <div className='new-collection'>
+      <h1>NEW COLLECTION</h1>
       <hr /> 
       <div className="collection">
         {new_collection.map((item,i)=>{
